@@ -74,3 +74,17 @@ void Recorridos::mostrarDatos_bfs()
         cout << padre[i]<< " ";
     }
 }
+
+void Recorridos::clasificarArcos(Grafo & g)
+{
+    inicializar(g);
+    for(list<int>::iterator it = vertices.begin(); it != vertices.end(); it++)
+    {
+        int u = *it;
+        if(estado[u] == NO_VISITADO)
+        {
+            clasificarArcos_dfs(g, u);
+        }
+    }
+}
+

@@ -12,6 +12,7 @@ int main()
     v.push_front(2);
     v.push_front(3);
     v.push_front(4);
+    v.push_front(5);
 
     Grafo grafo(v);
     grafo.agregarArco(0,2,20);
@@ -20,6 +21,8 @@ int main()
     grafo.agregarArco(2,1,20);
     grafo.agregarArco(2,3,20);
     grafo.agregarArco(3,4,20);
+    grafo.agregarArco(2,5,20);
+    grafo.agregarArco(5,4,20);
 
     grafo.mostrarGrafo();
 

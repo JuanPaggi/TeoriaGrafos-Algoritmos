@@ -2,8 +2,6 @@
 #define RECORRIDOS_H
 
 #include "Grafo.h"
-#include <list>
-#include <map>
 
 #define NO_VISITADO -1
 #define DESCUBIERTO 0
@@ -22,6 +20,8 @@ public:
     void bosque_BFS(Grafo & g);
     void devolverDatos_bfs(int * & distacia, int * & padre);
     void mostrarDatos_bfs();
+
+    void clasificarArcos(Grafo & g);
 
 private:
     int time;
@@ -88,6 +88,40 @@ private:
                 }
             }
         }
+    }
+
+    void clasificarArcos_dfs(Grafo & g, int u)
+    {
+        estado[u] = DESCUBIERTO;
+        descubierto[u] = ++time;
+        list<Grafo::Arco> adyacentes = g.devolverAdyacentes(u);
+        for(list<Grafo::Arco>::iterator it = adyacentes.begin(); it != adyacentes.end(); it++)
+        {
+            int v = it->devolverAdyacente();
+            if(estado[v] == NO_VISITADO)
+            {
+                cout << u << "->" << v << " Arbol"<<endl;
+                clasificarArcos_dfs(g, v);
+            }
+            else
+                if(estado[v] == DESCUBIERTO)
+                {
+                    cout << u << "->" << v << " Retroceso"<<endl;
+                }
+                else
+                    if(estado[v] == VISITADO)
+                    {
+                        if(descubierto[u] < descubierto[v])
+                        {
+                            cout << u << "->" << v << " Avance"<<endl;
+                        }
+                        if(descubierto[u] > descubierto[v])
+                        {
+                            cout << u << "->" << v << " Cruce"<<endl;
+                        }
+                    }
+        }
+        estado[u] = VISITADO;
     }
 };
 
