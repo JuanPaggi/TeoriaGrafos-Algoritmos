@@ -3,9 +3,6 @@
 
 #include "Grafo.h"
 
-#define NO_VISITADO -1
-#define DESCUBIERTO 0
-#define VISITADO 1
 
 class Recorridos
 {

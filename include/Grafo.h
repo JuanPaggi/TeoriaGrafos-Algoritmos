@@ -5,6 +5,10 @@
 #include <map>
 #include <set>
 
+#define NO_VISITADO -1
+#define DESCUBIERTO 0
+#define VISITADO 1
+
 using namespace std;
 
 class Grafo

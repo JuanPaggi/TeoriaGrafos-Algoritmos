@@ -1,6 +1,7 @@
 #include <iostream>
 #include "Grafo.h"
 #include "Recorridos.h"
+#include "AlgoritmosVarios.h"
 
 using namespace std;
 
@@ -27,5 +28,11 @@ int main()
     grafo.mostrarGrafo();
 
     cout << "------------------------" << endl;
+
+    AlgoritmosVarios caminos;
+
+    caminos.longitudCaminos(grafo, 0);
+
+    caminos.mostrarLongitudes();
 
 }
