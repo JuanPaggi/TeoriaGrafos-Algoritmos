@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1553617905 source:c:\users\pachi\desktop\c++\algoritmos\main.cpp
+	<iostream>
+	"GrafoMap.h"
+	"Recorridos.h"
+
+1553543163 source:c:\users\pachi\desktop\c++\algoritmos\src\grafomatriz.cpp
+	"GrafoMatriz.h"
+
+1553539784 c:\users\pachi\desktop\c++\algoritmos\include\grafomatriz.h
+	<iostream>
+	<list>
+
+1553606435 source:c:\users\pachi\desktop\c++\algoritmos\src\grafomap.cpp
+	"GrafoMap.h"
+
+1553599230 c:\users\pachi\desktop\c++\algoritmos\include\grafomap.h
+	<iostream>
+	<list>
+	<map>
+	<set>
+
+1553617264 source:c:\users\pachi\desktop\c++\algoritmos\src\recorridos.cpp
+	"Recorridos.h"
+
+1553617264 c:\users\pachi\desktop\c++\algoritmos\include\recorridos.h
+	"GrafoMap.h"
+	<list>
+	<map>
+
