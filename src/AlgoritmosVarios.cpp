@@ -27,6 +27,7 @@ void AlgoritmosVarios::mostrarLongitudes()
 void AlgoritmosVarios::bosque_topSort(Grafo & g)
 {
     int n = g.size();
+    vertices.clear();
     visitados = new bool[n];
     for(int i=0; i<n; i++)
     {
@@ -43,8 +44,9 @@ void AlgoritmosVarios::bosque_topSort(Grafo & g)
 
 void AlgoritmosVarios::mostrarOrdenamiento()
 {
-    for(list<int>::iterator it = topsort.begin(); it != topsort.end(); it++)
+    for(list<int>::iterator it = vertices.begin(); it != vertices.end(); it++)
     {
         cout << *it << " -> ";
     }
+    cout << endl;
 }

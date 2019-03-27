@@ -18,12 +18,12 @@ class AlgoritmosVarios
     private:
         int * estado, * descubierto;
         list<int> vertices;
-        list<int> topsort;
         int time, n;
         bool * visitados;
 
         void inicializar(Grafo & g)
         {
+            vertices.clear();
             n = g.size();
             time = 0;
             estado = new int[n];
@@ -66,7 +66,7 @@ class AlgoritmosVarios
                 }
 
             }
-            topsort.push_front(u);
+            vertices.push_front(u);
         }
 };
 

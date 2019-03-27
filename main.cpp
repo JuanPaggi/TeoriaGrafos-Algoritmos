@@ -25,10 +25,5 @@ int main()
 
     cout << "------------------------" << endl;
 
-    AlgoritmosVarios top;
-
-    top.bosque_topSort(grafo);
-
-    top.mostrarOrdenamiento();
 
 }
