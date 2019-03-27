@@ -34,7 +34,7 @@
 	"Recorridos.h"
 	"AlgoritmosVarios.h"
 
-1553689839 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\grafo.h
+1553690555 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\grafo.h
 	<iostream>
 	<list>
 	<map>
@@ -50,7 +50,7 @@
 1553625082 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\recorridos.cpp
 	"Recorridos.h"
 
-1553689430 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafo.cpp
+1553690555 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafo.cpp
 	"Grafo.h"
 
 1553687915 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\algoritmosvarios.cpp
@@ -59,8 +59,8 @@
 1553687915 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\algoritmosvarios.h
 	"Grafo.h"
 
-1553688500 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\arco.cpp
+1553690555 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\arco.cpp
 	"Arco.h"
 
-1553690328 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\arco.h
+1553690555 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\arco.h
 

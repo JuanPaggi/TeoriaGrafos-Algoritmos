@@ -29,10 +29,4 @@ int main()
 
     cout << "------------------------" << endl;
 
-    AlgoritmosVarios caminos;
-
-    caminos.longitudCaminos(grafo, 0);
-
-    caminos.mostrarLongitudes();
-
 }
