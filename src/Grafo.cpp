@@ -97,7 +97,7 @@ list<typename Grafo::Arco> Grafo::devolverAdyacentes(int origen) const
     {
         for(map<int, int>::const_iterator itA = it->second.begin(); itA != it->second.end(); itA++)
         {
-            adyacentes.push_back(Arco(itA->first, itA->second));
+            adyacentes.push_back(Arco(itA->first,itA->second));
         }
     }
     return adyacentes;
