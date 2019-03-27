@@ -4,6 +4,7 @@
 #include <list>
 #include <map>
 #include <set>
+#include "Arco.h"
 
 #define NO_VISITADO -1
 #define DESCUBIERTO 0
@@ -11,46 +12,23 @@
 
 using namespace std;
 
-class Grafo
+class Grafo : public Arco
 {
 public:
 
-    class Arco
-    {
-    private:
-        int adyacente;
-        int costo;
-    public:
-        Arco(int adyacente, int costo)
-        {
-            this->adyacente = adyacente;
-            this->costo = costo;
-        }
-
-        int devolverAdyacente() const
-        {
-            return adyacente;
-        }
-
-        int devolverCosto() const
-        {
-            return costo;
-        }
-    };
-
     Grafo();
-    Grafo(list<int> vertices);
+    Grafo(list<int>);
     ~Grafo();
-    Grafo & operator = (const Grafo & otroGrafo);
-    void agregarVertice(int vertice);
-    void agregarArco(int origen, int destino, int costo);
-    void borrarVertice(int vertice);
-    void borrarArco(int origen, int destino);
-    bool existeVertice(int vertice) const;
-    bool existeArco(int origen, int destino) const;
-    bool existeCamino(int origen, int destino);
+    Grafo & operator = (const Grafo &);
+    void agregarVertice(int);
+    void agregarArco(int,int,int);
+    void borrarVertice(int);
+    void borrarArco(int, int);
+    bool existeVertice(int) const;
+    bool existeArco(int, int) const;
+    bool existeCamino(int, int);
     list<int> devolverVertices() const;
-    list<Arco> devolverAdyacentes(int origen) const;
+    list<Arco> devolverAdyacentes(int) const;
     list<Arco> devolverAristas() const;
     void clear();
     bool empty() const;
@@ -60,9 +38,9 @@ public:
 private:
     map<int, map<int, int> > grafo;
 
-    bool existeCamino(int origen, int destino, set<int> & visitados) const
+    bool existeCamino(int origen, int adyacente, set<int> & visitados) const
     {
-        if (existeArco(origen, destino))
+        if (existeArco(origen, adyacente))
             return true;
         else
         {
@@ -72,7 +50,7 @@ private:
             {
                 int u = itA->devolverAdyacente();
                 if (visitados.find(u) == visitados.end())
-                    return existeCamino(u, destino, visitados);
+                    return existeCamino(u, adyacente, visitados);
             }
         }
         return false;
