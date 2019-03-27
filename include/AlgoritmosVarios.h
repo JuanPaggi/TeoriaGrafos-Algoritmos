@@ -9,7 +9,7 @@ class AlgoritmosVarios
         AlgoritmosVarios();
         ~AlgoritmosVarios();
 
-        void longitudCaminos(Grafo & g, int u);
+        void longitudCaminos(Grafo &, int);
         void mostrarLongitudes();
 
     private:

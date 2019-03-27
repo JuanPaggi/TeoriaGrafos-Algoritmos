@@ -10,15 +10,15 @@ public:
     Recorridos();
     ~Recorridos();
 
-    void bosque_DFS(Grafo & g);
-    void devolverDatos_dfs(int * & descubierto, int * & fin, int * & padre);
+    void bosque_DFS(Grafo &);
+    void devolverDatos_dfs(int * &, int * &, int * &);
     void mostrarDatos_dfs();
 
-    void bosque_BFS(Grafo & g);
-    void devolverDatos_bfs(int * & distacia, int * & padre);
+    void bosque_BFS(Grafo &);
+    void devolverDatos_bfs(int * &, int * &e);
     void mostrarDatos_bfs();
 
-    void clasificarArcos(Grafo & g);
+    void clasificarArcos(Grafo &);
 
 private:
     int time;
