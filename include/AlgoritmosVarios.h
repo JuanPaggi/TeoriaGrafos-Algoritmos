@@ -12,10 +12,15 @@ class AlgoritmosVarios
         void longitudCaminos(Grafo &, int);
         void mostrarLongitudes();
 
+        void bosque_topSort(Grafo &);
+        void mostrarOrdenamiento();
+
     private:
         int * estado, * descubierto;
         list<int> vertices;
+        list<int> topsort;
         int time, n;
+        bool * visitados;
 
         void inicializar(Grafo & g)
         {
@@ -46,6 +51,22 @@ class AlgoritmosVarios
         }
         estado[u] = VISITADO;
         --time;
+        }
+
+        void topSort(Grafo & g, int u)
+        {
+            visitados[u] = true;
+            list<Arco> adyacentes = g.devolverAdyacentes(u);
+            for(list<Arco>::iterator it = adyacentes.begin(); it != adyacentes.end(); it++)
+            {
+                int v = it->devolverAdyacente();
+                if(!visitados[v])
+                {
+                    topSort(g, v);
+                }
+
+            }
+            topsort.push_front(u);
         }
 };
 
