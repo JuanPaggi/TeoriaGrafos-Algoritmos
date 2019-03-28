@@ -64,3 +64,33 @@
 
 1553690555 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\arco.h
 
+1553695118 source:c:\users\pachi\desktop\teoriagrafos-algoritmos\main.cpp
+	<iostream>
+	"Grafo.h"
+	"Recorridos.h"
+	"AlgoritmosVarios.h"
+
+1553690555 c:\users\pachi\desktop\teoriagrafos-algoritmos\include\grafo.h
+	<iostream>
+	<list>
+	<map>
+	<set>
+	"Arco.h"
+
+1553690555 c:\users\pachi\desktop\teoriagrafos-algoritmos\include\arco.h
+
+1553690980 c:\users\pachi\desktop\teoriagrafos-algoritmos\include\recorridos.h
+	"Grafo.h"
+
+1553695108 c:\users\pachi\desktop\teoriagrafos-algoritmos\include\algoritmosvarios.h
+	"Grafo.h"
+
+1553694890 source:c:\users\pachi\desktop\teoriagrafos-algoritmos\src\algoritmosvarios.cpp
+	"AlgoritmosVarios.h"
+
+1553690555 source:c:\users\pachi\desktop\teoriagrafos-algoritmos\src\arco.cpp
+	"Arco.h"
+
+1553625082 source:c:\users\pachi\desktop\teoriagrafos-algoritmos\src\recorridos.cpp
+	"Recorridos.h"
+

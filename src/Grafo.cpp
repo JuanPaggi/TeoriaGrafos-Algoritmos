@@ -123,7 +123,7 @@ void Grafo::clear()
 
 bool Grafo::empty() const
 {
-    return grafo.size();
+    return grafo.empty();
 }
 
 int Grafo::size() const
