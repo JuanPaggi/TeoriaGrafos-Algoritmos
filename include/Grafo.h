@@ -12,7 +12,7 @@
 
 using namespace std;
 
-class Grafo : public Arco
+class Grafo
 {
 public:
 

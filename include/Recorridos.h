@@ -48,8 +48,8 @@ private:
     {
         estado[u] = DESCUBIERTO;
         descubierto[u] = ++time;
-        list<Grafo::Arco> adyacentes = g.devolverAdyacentes(u);
-        for(list<Grafo::Arco>::iterator it = adyacentes.begin(); it != adyacentes.end(); it++)
+        list<Arco> adyacentes = g.devolverAdyacentes(u);
+        for(list<Arco>::iterator it = adyacentes.begin(); it != adyacentes.end(); it++)
         {
             int v = it->devolverAdyacente();
             if(estado[v] == NO_VISITADO)
@@ -72,8 +72,8 @@ private:
         {
             int u = cola.front();
             cola.pop_front();
-            list<Grafo::Arco> adyacentes = g.devolverAdyacentes(u);
-            for(list<Grafo::Arco>::iterator it = adyacentes.begin(); it != adyacentes.end(); it++)
+            list<Arco> adyacentes = g.devolverAdyacentes(u);
+            for(list<Arco>::iterator it = adyacentes.begin(); it != adyacentes.end(); it++)
             {
                 int v = it-> devolverAdyacente();
                 if(estado[v] == NO_VISITADO)
@@ -91,8 +91,8 @@ private:
     {
         estado[u] = DESCUBIERTO;
         descubierto[u] = ++time;
-        list<Grafo::Arco> adyacentes = g.devolverAdyacentes(u);
-        for(list<Grafo::Arco>::iterator it = adyacentes.begin(); it != adyacentes.end(); it++)
+        list<Arco> adyacentes = g.devolverAdyacentes(u);
+        for(list<Arco>::iterator it = adyacentes.begin(); it != adyacentes.end(); it++)
         {
             int v = it->devolverAdyacente();
             if(estado[v] == NO_VISITADO)

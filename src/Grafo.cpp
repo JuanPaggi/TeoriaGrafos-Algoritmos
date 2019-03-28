@@ -89,7 +89,7 @@ list<int> Grafo::devolverVertices() const
     return vertices;
 }
 
-list<typename Grafo::Arco> Grafo::devolverAdyacentes(int origen) const
+list<Arco> Grafo::devolverAdyacentes(int origen) const
 {
     list<Arco> adyacentes;
     map<int, map<int, int> >::const_iterator it = grafo.find(origen);
@@ -97,20 +97,20 @@ list<typename Grafo::Arco> Grafo::devolverAdyacentes(int origen) const
     {
         for(map<int, int>::const_iterator itA = it->second.begin(); itA != it->second.end(); itA++)
         {
-            adyacentes.push_back(Arco(itA->first,itA->second));
+            adyacentes.push_back(Arco(origen, itA->first,itA->second));
         }
     }
     return adyacentes;
 }
 
-list<typename Grafo::Arco> Grafo::devolverAristas() const
+list<Arco> Grafo::devolverAristas() const
 {
     list<Arco> aristas;
     for(map<int, map<int, int> >::const_iterator it = grafo.begin(); it != grafo.end(); it++)
     {
         for(map<int, int>::const_iterator itA = it->second.begin(); itA != it->second.end(); itA++)
         {
-            aristas.push_back(Arco(itA->first, itA->second));
+            aristas.push_back(Arco(it->first , itA->first, itA->second));
         }
     }
     return aristas;
@@ -143,8 +143,8 @@ void Grafo::mostrarGrafo()
     for(list<int>::iterator it = vertices.begin(); it != vertices.end(); it++)
     {
         cout << *it << "->";
-        list<typename Grafo::Arco > adyacentes = devolverAdyacentes(*it);
-        for(list<typename Grafo::Arco>::iterator itA = adyacentes.begin(); itA != adyacentes.end(); itA++)
+        list<Arco > adyacentes = devolverAdyacentes(*it);
+        for(list<Arco>::iterator itA = adyacentes.begin(); itA != adyacentes.end(); itA++)
         {
             cout << itA->devolverAdyacente() << " " ;
         }

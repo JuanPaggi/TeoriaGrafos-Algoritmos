@@ -11,12 +11,17 @@ Arco::~Arco()
     //dtor
 }
 
-Arco::Arco(int adyacente, int costo)
+Arco::Arco(int origen, int adyacente, int costo)
 {
+    this->origen = origen;
     this->adyacente = adyacente;
     this->costo = costo;
 }
 
+int Arco::devolverOrigen()
+{
+    return origen;
+}
 
 int Arco::devolverAdyacente()
 {
@@ -26,6 +31,11 @@ int Arco::devolverAdyacente()
 int Arco::devolverCosto()
 {
     return costo;
+}
+
+void Arco::agregarOrigen(int origen)
+{
+    this->origen = origen;
 }
 
 void Arco::agregarCosto(int costo)
