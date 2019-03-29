@@ -47,6 +47,16 @@ void Recorridos::mostrarDatos_dfs()
     {
         cout << padre[i]<< " ";
     }
+    cout << endl;
+    for(int i = 0; i < n; i++)
+    {
+        cout << post[i]<< " ";
+    }
+}
+
+int * Recorridos::devolverPostOrden()
+{
+    return post;
 }
 
 void Recorridos::bosque_BFS(Grafo & g)
@@ -87,4 +97,3 @@ void Recorridos::clasificarArcos(Grafo & g)
         }
     }
 }
-

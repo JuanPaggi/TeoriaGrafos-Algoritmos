@@ -13,6 +13,7 @@ public:
     void bosque_DFS(Grafo &);
     void devolverDatos_dfs(int * &, int * &, int * &);
     void mostrarDatos_dfs();
+    int * devolverPostOrden();
 
     void bosque_BFS(Grafo &);
     void devolverDatos_bfs(int * &, int * &e);
@@ -24,7 +25,7 @@ private:
     int time;
     list<int> vertices;
 
-    int * estado, * descubierto, * padre, * fin, * distancia;
+    int * estado, * descubierto, * padre, * fin, * distancia, *post;
 
     void inicializar(Grafo & g)
     {
@@ -35,9 +36,11 @@ private:
         padre = new int[n];
         fin = new int[n];
         distancia = new int[n];
+        post = new int[n];
         vertices = g.devolverVertices();
         for(int i = 0; i < n; i++)
         {
+            post[i] = -1;
             estado[i] = NO_VISITADO;
             padre[i] = -1;
             distancia[i] = -1;
@@ -60,6 +63,7 @@ private:
         }
         estado[u] = VISITADO;
         fin[u] = ++time;
+        post[u] = time;
     }
 
     void bfs(Grafo & g, int s)

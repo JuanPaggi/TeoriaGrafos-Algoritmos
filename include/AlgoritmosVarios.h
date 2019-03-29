@@ -2,6 +2,7 @@
 #define ALGORITMOSVARIOS_H
 
 #include "Grafo.h"
+#include "Recorridos.h"
 
 class AlgoritmosVarios
 {
@@ -14,6 +15,8 @@ class AlgoritmosVarios
 
         void bosque_topSort(Grafo &);
         void mostrarOrdenamiento();
+
+        bool hayCiclo(Grafo &);
 
     private:
         int * estado, * descubierto;

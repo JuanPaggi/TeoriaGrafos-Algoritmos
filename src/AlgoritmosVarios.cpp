@@ -26,18 +26,21 @@ void AlgoritmosVarios::mostrarLongitudes()
 
 void AlgoritmosVarios::bosque_topSort(Grafo & g)
 {
-    int n = g.size();
     vertices.clear();
-    visitados = new bool[n];
-    for(int i=0; i<n; i++)
+    if(!hayCiclo(g))
     {
-        visitados[i] = false;
-    }
-    for(int i=0; i<n; i++)
-    {
-        if(!visitados[i])
+        int n = g.size();
+        visitados = new bool[n];
+        for(int i=0; i<n; i++)
         {
-            topSort(g, i);
+            visitados[i] = false;
+        }
+        for(int i=0; i<n; i++)
+        {
+            if(!visitados[i])
+            {
+                topSort(g, i);
+            }
         }
     }
 }
@@ -49,4 +52,32 @@ void AlgoritmosVarios::mostrarOrdenamiento()
         cout << *it << " -> ";
     }
     cout << endl;
+}
+
+bool AlgoritmosVarios::hayCiclo(Grafo & g)
+{
+    bool hayciclo = false;
+    Recorridos post;
+    post.bosque_DFS(g);
+    int n = g.size();
+    int * postOrden = new int[n];
+    postOrden = post.devolverPostOrden();
+    vertices.clear();
+    vertices = g.devolverVertices();
+    for(list<int>::iterator it = vertices.begin(); it != vertices.end(); it++)
+    {
+        list<Arco> adyacentes = g.devolverAdyacentes(*it);
+        for(list<Arco>::iterator itA = adyacentes.begin(); itA != adyacentes.end(); itA++)
+        {
+            if(!hayciclo)
+            {
+                if(postOrden[itA->devolverAdyacente()] >= postOrden[*it])
+                {
+                    hayciclo = true;
+                }
+            }
+        }
+    }
+    vertices.clear();
+    return hayciclo;
 }

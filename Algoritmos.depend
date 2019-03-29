@@ -28,41 +28,42 @@
 	<list>
 	<map>
 
-1553695118 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
+1553809193 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
 	<iostream>
 	"Grafo.h"
 	"Recorridos.h"
 	"AlgoritmosVarios.h"
 
-1553740228 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\grafo.h
+1553741197 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\grafo.h
 	<iostream>
 	<list>
 	<map>
 	<set>
 	"Arco.h"
 
-1553740319 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\recorridos.h
+1553810640 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\recorridos.h
 	"Grafo.h"
 
 1553635562 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafomap.cpp
 	"Grafo.h"
 
-1553625082 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\recorridos.cpp
+1553805310 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\recorridos.cpp
 	"Recorridos.h"
 
-1553740614 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafo.cpp
+1553741197 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafo.cpp
 	"Grafo.h"
 
-1553694890 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\algoritmosvarios.cpp
+1553809481 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\algoritmosvarios.cpp
 	"AlgoritmosVarios.h"
 
-1553740294 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\algoritmosvarios.h
+1553805887 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\algoritmosvarios.h
 	"Grafo.h"
+	"Recorridos.h"
 
-1553741069 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\arco.cpp
+1553741197 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\arco.cpp
 	"Arco.h"
 
-1553741069 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\arco.h
+1553741197 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\arco.h
 
 1553695118 source:c:\users\pachi\desktop\teoriagrafos-algoritmos\main.cpp
 	<iostream>
@@ -93,4 +94,38 @@
 
 1553625082 source:c:\users\pachi\desktop\teoriagrafos-algoritmos\src\recorridos.cpp
 	"Recorridos.h"
+
+1553809481 source:c:\users\pachi\desktop\teoriagrafos-algoritmos-master\teoriagrafos-algoritmos-master\src\algoritmosvarios.cpp
+	"AlgoritmosVarios.h"
+
+1553805887 c:\users\pachi\desktop\teoriagrafos-algoritmos-master\teoriagrafos-algoritmos-master\include\algoritmosvarios.h
+	"Grafo.h"
+	"Recorridos.h"
+
+1553741197 c:\users\pachi\desktop\teoriagrafos-algoritmos-master\teoriagrafos-algoritmos-master\include\grafo.h
+	<iostream>
+	<list>
+	<map>
+	<set>
+	"Arco.h"
+
+1553741197 c:\users\pachi\desktop\teoriagrafos-algoritmos-master\teoriagrafos-algoritmos-master\include\arco.h
+
+1553741197 source:c:\users\pachi\desktop\teoriagrafos-algoritmos-master\teoriagrafos-algoritmos-master\src\arco.cpp
+	"Arco.h"
+
+1553741197 source:c:\users\pachi\desktop\teoriagrafos-algoritmos-master\teoriagrafos-algoritmos-master\src\grafo.cpp
+	"Grafo.h"
+
+1553805310 source:c:\users\pachi\desktop\teoriagrafos-algoritmos-master\teoriagrafos-algoritmos-master\src\recorridos.cpp
+	"Recorridos.h"
+
+1553810640 c:\users\pachi\desktop\teoriagrafos-algoritmos-master\teoriagrafos-algoritmos-master\include\recorridos.h
+	"Grafo.h"
+
+1553809193 source:c:\users\pachi\desktop\teoriagrafos-algoritmos-master\teoriagrafos-algoritmos-master\main.cpp
+	<iostream>
+	"Grafo.h"
+	"Recorridos.h"
+	"AlgoritmosVarios.h"
 
