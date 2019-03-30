@@ -18,7 +18,7 @@ void AlgoritmosVarios::longitudCaminos(Grafo & g, int u)
 
 void AlgoritmosVarios::mostrarLongitudes()
 {
-    for(int i=0; i < n; i++)
+    for(int i=1; i <= n; i++)
     {
         cout << i << " Distancia: " << descubierto[i] << endl;
     }
@@ -58,7 +58,7 @@ bool AlgoritmosVarios::hayCiclo(Grafo & g)
 {
     bool hayciclo = false;
     Recorridos post;
-    post.bosque_DFS(g);
+    post.bosque_DFS(g, 1);
     int n = g.size();
     int * postOrden = new int[n];
     postOrden = post.devolverPostOrden();
@@ -80,4 +80,27 @@ bool AlgoritmosVarios::hayCiclo(Grafo & g)
     }
     vertices.clear();
     return hayciclo;
+}
+
+void AlgoritmosVarios::caminosMinimos_Vertice(Grafo & g, int u)
+{
+    Recorridos bfs;
+    bfs.bosque_BFS(g, u);
+    bfs.devolverDatos_bfs(distancia, padre);
+    vertices.clear();
+    vertices = g.devolverVertices();
+    for(list<int>::iterator it = vertices.begin(); it != vertices.end(); it++)
+    {
+        int v = *it;
+        cout << "Camino hasta: " << v << endl;
+        while(padre[v] != -1)
+        {
+            cout <<" " << v;
+            v = padre[v];
+        }
+
+        cout <<endl;
+        cout << "Distancia: " << distancia[*it] << endl;
+        cout << "------------" << endl;
+    }
 }

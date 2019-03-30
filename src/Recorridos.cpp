@@ -10,15 +10,16 @@ Recorridos::~Recorridos()
     //dtor
 }
 
-void Recorridos::bosque_DFS(Grafo & g)
+void Recorridos::bosque_DFS(Grafo & g, int u)
 {
     inicializar(g);
+    dfs(g, u);
     for(list<int>::iterator it = vertices.begin(); it != vertices.end(); it++)
     {
-        int u = *it;
-        if(estado[u] == NO_VISITADO)
+        int v = *it;
+        if(estado[v] == NO_VISITADO)
         {
-            dfs(g, u);
+            dfs(g, v);
         }
     }
 }
@@ -33,36 +34,34 @@ void Recorridos::devolverDatos_dfs(int *&descubierto, int * & fin, int * & padre
 void Recorridos::mostrarDatos_dfs()
 {
     int n = vertices.size();
-    for(int i = 0; i < n; i++)
+    cout <<"descubierto: ";
+    for(int i = 1; i <= n; i++)
     {
         cout << descubierto[i]<< " ";
     }
     cout << endl;
-    for(int i = 0; i < n; i++)
+    cout <<"fin: ";
+    for(int i = 1; i <= n; i++)
     {
         cout << fin[i]<< " ";
     }
     cout << endl;
-    for(int i = 0; i < n; i++)
+    cout <<"padre: ";
+    for(int i = 1; i <= n; i++)
     {
         cout << padre[i]<< " ";
-    }
-    cout << endl;
-    for(int i = 0; i < n; i++)
-    {
-        cout << post[i]<< " ";
     }
 }
 
 int * Recorridos::devolverPostOrden()
 {
-    return post;
+    return fin;
 }
 
-void Recorridos::bosque_BFS(Grafo & g)
+void Recorridos::bosque_BFS(Grafo & g, int u)
 {
     inicializar(g);
-    bfs(g, 0);
+    bfs(g, u);
 }
 
 void Recorridos::devolverDatos_bfs(int *&distancia, int * & padre)
@@ -74,14 +73,16 @@ void Recorridos::devolverDatos_bfs(int *&distancia, int * & padre)
 void Recorridos::mostrarDatos_bfs()
 {
     int n = vertices.size();
-    for(int i = 0; i < n; i++)
+    cout <<"padre: ";
+    for(int i = 1; i <= n; i++)
     {
-        cout << distancia[i]<< " ";
+        cout <<  padre[i]<< " ";
     }
     cout << endl;
-    for(int i = 0; i < n; i++)
+    cout <<"distancia: ";
+    for(int i = 1; i <= n; i++)
     {
-        cout << padre[i]<< " ";
+        cout << distancia[i]<< " ";
     }
 }
 

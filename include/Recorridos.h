@@ -10,12 +10,12 @@ public:
     Recorridos();
     ~Recorridos();
 
-    void bosque_DFS(Grafo &);
+    void bosque_DFS(Grafo &, int);
     void devolverDatos_dfs(int * &, int * &, int * &);
     void mostrarDatos_dfs();
     int * devolverPostOrden();
 
-    void bosque_BFS(Grafo &);
+    void bosque_BFS(Grafo &, int);
     void devolverDatos_bfs(int * &, int * &e);
     void mostrarDatos_bfs();
 
@@ -25,22 +25,20 @@ private:
     int time;
     list<int> vertices;
 
-    int * estado, * descubierto, * padre, * fin, * distancia, *post;
+    int * estado, * descubierto, * padre, * fin, * distancia;
 
     void inicializar(Grafo & g)
     {
         time = 0;
         int n = g.size();
-        estado = new int[n];
-        descubierto = new int[n];
-        padre = new int[n];
-        fin = new int[n];
-        distancia = new int[n];
-        post = new int[n];
+        estado = new int[n+1];
+        descubierto = new int[n+1];
+        padre = new int[n+1];
+        fin = new int[n+1];
+        distancia = new int[n+1];
         vertices = g.devolverVertices();
-        for(int i = 0; i < n; i++)
+        for(int i = 1; i <= n; i++)
         {
-            post[i] = -1;
             estado[i] = NO_VISITADO;
             padre[i] = -1;
             distancia[i] = -1;
@@ -63,7 +61,6 @@ private:
         }
         estado[u] = VISITADO;
         fin[u] = ++time;
-        post[u] = time;
     }
 
     void bfs(Grafo & g, int s)

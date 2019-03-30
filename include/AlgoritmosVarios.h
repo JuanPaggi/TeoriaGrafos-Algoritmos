@@ -18,8 +18,10 @@ class AlgoritmosVarios
 
         bool hayCiclo(Grafo &);
 
+        void caminosMinimos_Vertice(Grafo &, int);
+
     private:
-        int * estado, * descubierto;
+        int * estado, * descubierto, *padre, *distancia;
         list<int> vertices;
         int time, n;
         bool * visitados;
@@ -29,9 +31,9 @@ class AlgoritmosVarios
             vertices.clear();
             n = g.size();
             time = 0;
-            estado = new int[n];
-            descubierto = new int [n];
-            for(int i = 0; i < n; i++)
+            estado = new int[n+1];
+            descubierto = new int [n+1];
+            for(int i = 1; i <= n; i++)
             {
                 estado[i] = NO_VISITADO;
                 descubierto[i] = -1;
