@@ -20,9 +20,11 @@ class AlgoritmosVarios
 
         void caminosMinimos_Vertice(Grafo &, int);
 
+        void todosLosCaminos(Grafo &, int, int);
+
     private:
         int * estado, * descubierto, *padre, *distancia;
-        list<int> vertices;
+        list<int> vertices, aux;
         int time, n;
         bool * visitados;
 
@@ -42,20 +44,20 @@ class AlgoritmosVarios
 
         void caminos_dfs(Grafo & g, int u)
         {
-        estado[u] = DESCUBIERTO;
-        descubierto[u] = time;
-        time++;
-        list<Arco> adyacentes = g.devolverAdyacentes(u);
-        for(list<Arco>::iterator it = adyacentes.begin(); it != adyacentes.end(); it++)
-        {
-            int v = it->devolverAdyacente();
-            if(estado[v] == NO_VISITADO)
+            estado[u] = DESCUBIERTO;
+            descubierto[u] = time;
+            time++;
+            list<Arco> adyacentes = g.devolverAdyacentes(u);
+            for(list<Arco>::iterator it = adyacentes.begin(); it != adyacentes.end(); it++)
             {
-                caminos_dfs(g, v);
+                int v = it->devolverAdyacente();
+                if(estado[v] == NO_VISITADO)
+                {
+                    caminos_dfs(g, v);
+                }
             }
-        }
-        estado[u] = VISITADO;
-        --time;
+            estado[u] = VISITADO;
+            --time;
         }
 
         void topSort(Grafo & g, int u)
@@ -72,6 +74,36 @@ class AlgoritmosVarios
 
             }
             vertices.push_front(u);
+        }
+
+        void todosLosCaminos_dfs(Grafo & g, int origen, int destino)
+        {
+            if(origen == destino)
+            {
+                aux.push_back(destino);
+                for(list<int>::iterator it = aux.begin(); it != aux.end(); it++)
+                {
+                    cout << " " << *it ;
+                }
+                cout << endl;
+                aux.pop_back();
+            }
+            else
+            {
+                estado[origen] = VISITADO;
+                aux.push_back(origen);
+                list<Arco> adyacentes = g.devolverAdyacentes(origen);
+                for(list<Arco>::iterator it = adyacentes.begin(); it != adyacentes.end(); it++)
+                {
+                    int v = it->devolverAdyacente();
+                    if(estado[v] == NO_VISITADO)
+                    {
+                        todosLosCaminos_dfs(g, v, destino);
+                    }
+                }
+                estado[origen] = NO_VISITADO;
+                aux.pop_back();
+            }
         }
 };
 

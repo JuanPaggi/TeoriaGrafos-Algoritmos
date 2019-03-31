@@ -104,3 +104,10 @@ void AlgoritmosVarios::caminosMinimos_Vertice(Grafo & g, int u)
         cout << "------------" << endl;
     }
 }
+
+void AlgoritmosVarios::todosLosCaminos(Grafo & g, int origen, int destino)
+{
+    aux.clear();
+    inicializar(g);
+    todosLosCaminos_dfs(g, origen, destino);
+}

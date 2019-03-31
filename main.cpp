@@ -13,21 +13,24 @@ int main()
     v.push_front(3);
     v.push_front(4);
     v.push_front(5);
+    v.push_front(6);
 
     Grafo grafo(v);
-    grafo.agregarArco(1,2,20);
-    grafo.agregarArco(2,3,20);
-    grafo.agregarArco(2,4,20);
-    grafo.agregarArco(3,4,20);
-    grafo.agregarArco(4,5,20);
-    grafo.agregarArco(1,5,20);
+    grafo.agregarArco(2,1,20);
+    grafo.agregarArco(1,3,20);
+    grafo.agregarArco(3,5,20);
+    grafo.agregarArco(5,6,20);
+    grafo.agregarArco(5,4,20);
+    grafo.agregarArco(4,2,20);
+    grafo.agregarArco(4,3,20);
+    grafo.agregarArco(6,1,20);
+    grafo.agregarArco(6,3,20);
 
     grafo.mostrarGrafo();
 
     cout << "------------------------" << endl;
 
-    Recorridos dfs;
-    dfs.bosque_DFS(grafo, 1);
-    dfs.mostrarDatos_dfs();
+    AlgoritmosVarios caminos;
+    caminos.todosLosCaminos(grafo,5,1);
 
 }
