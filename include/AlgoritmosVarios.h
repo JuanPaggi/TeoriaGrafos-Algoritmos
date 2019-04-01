@@ -22,11 +22,14 @@ class AlgoritmosVarios
 
         void todosLosCaminos(Grafo &, int, int);
 
+        void camino_sinPasarPorRojo(Grafo &, int, int, list<int>);
+
     private:
         int * estado, * descubierto, *padre, *distancia;
         list<int> vertices, aux;
         int time, n;
         bool * visitados;
+        bool corte;
 
         void inicializar(Grafo & g)
         {
@@ -103,6 +106,56 @@ class AlgoritmosVarios
                 }
                 estado[origen] = NO_VISITADO;
                 aux.pop_back();
+            }
+        }
+
+        void camino_sinPasarPorRojo_dfs(Grafo & g, int origen, int destino, list<int> rojo)
+        {
+            if(origen == destino)
+            {
+                aux.push_back(destino);
+                for(list<int>::iterator it = aux.begin(); it != aux.end(); it++)
+                {
+                    cout << " " << *it ;
+                }
+                cout << endl;
+                corte = true;
+            }
+            else
+            {
+                if(!corte)
+                {
+                    estado[origen] = VISITADO;
+                    aux.push_back(origen);
+                    list<Arco> adyacentes = g.devolverAdyacentes(origen);
+                    for(list<Arco>::iterator it = adyacentes.begin(); it != adyacentes.end(); it++)
+                    {
+                        int v = it->devolverAdyacente();
+                        if((!esRojo(rojo, v)) && (estado[v] == NO_VISITADO))
+                        {
+                            camino_sinPasarPorRojo_dfs(g, v, destino, rojo);
+                        }
+                    }
+                    estado[origen] = NO_VISITADO;
+                    aux.pop_back();
+                }
+            }
+        }
+
+        bool esRojo(list<int> rojo, int v)
+        {
+            list<int>::iterator it = rojo.begin();
+            while(it != rojo.end() && *it != v)
+            {
+                it++;
+            }
+            if(it == rojo.end())
+            {
+                return false;
+            }
+            else
+            {
+                return true;
             }
         }
 };

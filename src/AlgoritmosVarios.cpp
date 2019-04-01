@@ -111,3 +111,11 @@ void AlgoritmosVarios::todosLosCaminos(Grafo & g, int origen, int destino)
     inicializar(g);
     todosLosCaminos_dfs(g, origen, destino);
 }
+
+void AlgoritmosVarios::camino_sinPasarPorRojo(Grafo & g, int origen, int destino, list<int> rojo)
+{
+    aux.clear();
+    inicializar(g);
+    corte = false;
+    camino_sinPasarPorRojo_dfs(g, origen, destino, rojo);
+}

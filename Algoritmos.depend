@@ -28,7 +28,7 @@
 	<list>
 	<map>
 
-1554043650 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
+1554143343 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
 	<iostream>
 	"Grafo.h"
 	"Recorridos.h"
@@ -53,10 +53,10 @@
 1553741197 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafo.cpp
 	"Grafo.h"
 
-1554043126 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\algoritmosvarios.cpp
+1554142870 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\algoritmosvarios.cpp
 	"AlgoritmosVarios.h"
 
-1554043632 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\algoritmosvarios.h
+1554143432 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\algoritmosvarios.h
 	"Grafo.h"
 	"Recorridos.h"
 
