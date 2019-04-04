@@ -129,3 +129,45 @@
 	"Recorridos.h"
 	"AlgoritmosVarios.h"
 
+1554332853 source:c:\users\pachi\desktop\teoriagrafos-algoritmos-master (1)\teoriagrafos-algoritmos-master\main.cpp
+	<iostream>
+	"Grafo.h"
+	"Recorridos.h"
+	"AlgoritmosVarios.h"
+	"ArbolRecubrimiento.h"
+
+1554143699 c:\users\pachi\desktop\teoriagrafos-algoritmos-master (1)\teoriagrafos-algoritmos-master\include\grafo.h
+	<iostream>
+	<list>
+	<map>
+	<set>
+	"Arco.h"
+
+1554143699 c:\users\pachi\desktop\teoriagrafos-algoritmos-master (1)\teoriagrafos-algoritmos-master\include\arco.h
+
+1554143699 c:\users\pachi\desktop\teoriagrafos-algoritmos-master (1)\teoriagrafos-algoritmos-master\include\recorridos.h
+	"Grafo.h"
+
+1554143699 c:\users\pachi\desktop\teoriagrafos-algoritmos-master (1)\teoriagrafos-algoritmos-master\include\algoritmosvarios.h
+	"Grafo.h"
+	"Recorridos.h"
+
+1554143699 source:c:\users\pachi\desktop\teoriagrafos-algoritmos-master (1)\teoriagrafos-algoritmos-master\src\algoritmosvarios.cpp
+	"AlgoritmosVarios.h"
+
+1554143699 source:c:\users\pachi\desktop\teoriagrafos-algoritmos-master (1)\teoriagrafos-algoritmos-master\src\arco.cpp
+	"Arco.h"
+
+1554143699 source:c:\users\pachi\desktop\teoriagrafos-algoritmos-master (1)\teoriagrafos-algoritmos-master\src\grafo.cpp
+	"Grafo.h"
+
+1554143699 source:c:\users\pachi\desktop\teoriagrafos-algoritmos-master (1)\teoriagrafos-algoritmos-master\src\recorridos.cpp
+	"Recorridos.h"
+
+1554334448 source:c:\users\pachi\desktop\teoriagrafos-algoritmos-master (1)\teoriagrafos-algoritmos-master\src\arbolrecubrimiento.cpp
+	"ArbolRecubrimiento.h"
+
+1554334599 c:\users\pachi\desktop\teoriagrafos-algoritmos-master (1)\teoriagrafos-algoritmos-master\include\arbolrecubrimiento.h
+	"Grafo.h"
+	<iostream>
+

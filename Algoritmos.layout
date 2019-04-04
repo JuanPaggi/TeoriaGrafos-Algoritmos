@@ -2,39 +2,9 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="src\Grafo.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\AlgoritmosVarios.cpp" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2045" topLine="91" />
-		</Cursor>
-	</File>
-	<File name="include\AlgoritmosVarios.h" open="1" top="1" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="4177" topLine="71" />
-		</Cursor>
-		<Folding>
-			<Collapse line="33" />
-			<Collapse line="47" />
-			<Collapse line="65" />
-		</Folding>
-	</File>
-	<File name="include\Grafo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="289" topLine="39" />
-		</Cursor>
-	</File>
-	<File name="include\Recorridos.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="962" topLine="43" />
-		</Cursor>
-	</File>
-	<File name="main.cpp" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="770" topLine="3" />
-		</Cursor>
-	</File>
-	<File name="src\AlgoritmosVarios.cpp" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
-		<Cursor>
-			<Cursor1 position="2642" topLine="0" />
+			<Cursor1 position="2642" topLine="13" />
 		</Cursor>
 		<Folding>
 			<Collapse line="3" />
@@ -45,21 +15,57 @@
 			<Collapse line="48" />
 			<Collapse line="57" />
 			<Collapse line="85" />
+			<Collapse line="108" />
 		</Folding>
+	</File>
+	<File name="include\Grafo.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="289" topLine="38" />
+		</Cursor>
+	</File>
+	<File name="src\Grafo.cpp" open="0" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="2045" topLine="130" />
+		</Cursor>
+	</File>
+	<File name="main.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="802" topLine="27" />
+		</Cursor>
 	</File>
 	<File name="src\Arco.cpp" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="50" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\Arco.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+	<File name="src\ArbolRecubrimiento.cpp" open="1" top="1" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="0" topLine="3" />
+			<Cursor1 position="1543" topLine="68" />
+		</Cursor>
+	</File>
+	<File name="include\ArbolRecubrimiento.h" open="1" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="551" topLine="13" />
+		</Cursor>
+	</File>
+	<File name="include\AlgoritmosVarios.h" open="0" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="483" topLine="5" />
 		</Cursor>
 	</File>
 	<File name="src\Recorridos.cpp" open="0" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
 		<Cursor>
 			<Cursor1 position="629" topLine="51" />
+		</Cursor>
+	</File>
+	<File name="include\Recorridos.h" open="0" top="0" tabpos="1" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="962" topLine="43" />
+		</Cursor>
+	</File>
+	<File name="include\Arco.h" open="0" top="0" tabpos="0" split="0" active="1" splitpos="0" zoom_1="0" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="0" topLine="3" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>
