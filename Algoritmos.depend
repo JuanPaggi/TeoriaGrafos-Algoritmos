@@ -28,42 +28,43 @@
 	<list>
 	<map>
 
-1554143343 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
+1554341311 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
 	<iostream>
 	"Grafo.h"
 	"Recorridos.h"
 	"AlgoritmosVarios.h"
+	"ArbolRecubrimiento.h"
 
-1553741197 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\grafo.h
+1554143700 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\grafo.h
 	<iostream>
 	<list>
 	<map>
 	<set>
 	"Arco.h"
 
-1553973839 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\recorridos.h
+1554143700 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\recorridos.h
 	"Grafo.h"
 
 1553635562 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafomap.cpp
 	"Grafo.h"
 
-1553974024 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\recorridos.cpp
+1554143700 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\recorridos.cpp
 	"Recorridos.h"
 
-1553741197 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafo.cpp
+1554143700 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafo.cpp
 	"Grafo.h"
 
-1554142870 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\algoritmosvarios.cpp
+1554143700 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\algoritmosvarios.cpp
 	"AlgoritmosVarios.h"
 
-1554143432 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\algoritmosvarios.h
+1554143700 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\algoritmosvarios.h
 	"Grafo.h"
 	"Recorridos.h"
 
-1553741197 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\arco.cpp
+1554143700 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\arco.cpp
 	"Arco.h"
 
-1553741197 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\arco.h
+1554143700 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\arco.h
 
 1553695118 source:c:\users\pachi\desktop\teoriagrafos-algoritmos\main.cpp
 	<iostream>
@@ -170,4 +171,10 @@
 1554334599 c:\users\pachi\desktop\teoriagrafos-algoritmos-master (1)\teoriagrafos-algoritmos-master\include\arbolrecubrimiento.h
 	"Grafo.h"
 	<iostream>
+
+1554341342 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\arbolrecubrimiento.h
+	"Grafo.h"
+
+1554341269 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\arbolrecubrimiento.cpp
+	"ArbolRecubrimiento.h"
 

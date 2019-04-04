@@ -1,9 +1,7 @@
 #ifndef ARBOLRECUBRIMIENTO_H
 #define ARBOLRECUBRIMIENTO_H
 #include "Grafo.h"
-#include <iostream>
 
-using namespace std;
 
 class ArbolRecubrimiento
 {
@@ -11,7 +9,6 @@ class ArbolRecubrimiento
         ArbolRecubrimiento(Grafo &);
         ~ArbolRecubrimiento();
         void mostrarCosto();
-        void mostrarDatos();
         void prim();
 
     private:

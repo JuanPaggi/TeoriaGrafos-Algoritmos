@@ -49,8 +49,6 @@ int main()
 
     arbol.mostrarCosto();
 
-    cout << "------------------------" << endl;
-
     arbol.prim();
-    arbol.mostrarDatos();
+
 }

@@ -30,7 +30,10 @@ ArbolRecubrimiento::ArbolRecubrimiento(Grafo & g)
 
 ArbolRecubrimiento::~ArbolRecubrimiento()
 {
-    //dtor
+    for (int i = 0; i <= n; i++) {
+        delete [] costo[i];
+    }
+    delete [] costo;
 }
 
 void ArbolRecubrimiento::mostrarCosto()
@@ -75,17 +78,20 @@ void ArbolRecubrimiento::prim()
                 }
             }
     }
-}
 
-void ArbolRecubrimiento::mostrarDatos()
-{
+    cout << "------------------------" << endl;
+
+    cout << "Menor Costo: " ;
     for(int j = 1; j <= n; j++)
     {
         cout << menor_costo[j] << " ";
     }
     cout << endl;
+    cout << "Vertice mas cercano: " ;
     for(int j = 1; j <= n; j++)
     {
         cout << mas_cercano[j] << " ";
     }
+    cout << endl;
+    cout << "------------------------" << endl;
 }
