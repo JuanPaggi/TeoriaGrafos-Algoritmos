@@ -10,3 +10,6 @@ Deteccion de ciclos TestCiclo.
 Caminos minimos de un vertice a todos los otros.
 Todos los caminos de un vertice a otro.
 Camino sin pasar por lso vertices en rojo.
+
+Arboles de recubrimiento
+-Algoritmo de Prim
