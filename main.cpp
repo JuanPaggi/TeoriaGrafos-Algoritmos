@@ -45,10 +45,5 @@ int main()
     cout << "------------------------" << endl;
 
 
-    ArbolRecubrimiento arbol(grafo);
-
-    arbol.mostrarCosto();
-
-    arbol.prim();
 
 }

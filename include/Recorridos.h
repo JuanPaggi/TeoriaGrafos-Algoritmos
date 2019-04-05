@@ -18,6 +18,7 @@ public:
     void bosque_BFS(Grafo &, int);
     void devolverDatos_bfs(int * &, int * &e);
     void mostrarDatos_bfs();
+    void bosque_BFS_unico(Grafo & g, int u);
 
     void clasificarArcos(Grafo &);
 
@@ -41,7 +42,7 @@ private:
         {
             estado[i] = NO_VISITADO;
             padre[i] = -1;
-            distancia[i] = -1;
+            distancia[i] = 0;
         }
     }
 

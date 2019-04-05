@@ -85,7 +85,7 @@ bool AlgoritmosVarios::hayCiclo(Grafo & g)
 void AlgoritmosVarios::caminosMinimos_Vertice(Grafo & g, int u)
 {
     Recorridos bfs;
-    bfs.bosque_BFS(g, u);
+    bfs.bosque_BFS_unico(g, u);
     bfs.devolverDatos_bfs(distancia, padre);
     vertices.clear();
     vertices = g.devolverVertices();

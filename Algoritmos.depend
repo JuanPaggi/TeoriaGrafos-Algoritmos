@@ -28,7 +28,7 @@
 	<list>
 	<map>
 
-1554341311 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
+1554473955 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
 	<iostream>
 	"Grafo.h"
 	"Recorridos.h"
@@ -42,19 +42,19 @@
 	<set>
 	"Arco.h"
 
-1554143700 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\recorridos.h
+1554473898 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\recorridos.h
 	"Grafo.h"
 
 1553635562 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafomap.cpp
 	"Grafo.h"
 
-1554143700 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\recorridos.cpp
+1554473898 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\recorridos.cpp
 	"Recorridos.h"
 
 1554143700 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafo.cpp
 	"Grafo.h"
 
-1554143700 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\algoritmosvarios.cpp
+1554473955 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\algoritmosvarios.cpp
 	"AlgoritmosVarios.h"
 
 1554143700 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\algoritmosvarios.h
@@ -175,6 +175,6 @@
 1554341342 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\arbolrecubrimiento.h
 	"Grafo.h"
 
-1554341269 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\arbolrecubrimiento.cpp
+1554341494 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\arbolrecubrimiento.cpp
 	"ArbolRecubrimiento.h"
 

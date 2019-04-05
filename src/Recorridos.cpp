@@ -62,6 +62,20 @@ void Recorridos::bosque_BFS(Grafo & g, int u)
 {
     inicializar(g);
     bfs(g, u);
+    for(list<int>::iterator it = vertices.begin(); it != vertices.end(); it++)
+    {
+        int v = *it;
+        if(estado[v] == NO_VISITADO)
+        {
+            bfs(g, v);
+        }
+    }
+}
+
+void Recorridos::bosque_BFS_unico(Grafo & g, int u)
+{
+    inicializar(g);
+    bfs(g, u);
 }
 
 void Recorridos::devolverDatos_bfs(int *&distancia, int * & padre)
