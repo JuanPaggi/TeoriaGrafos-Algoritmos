@@ -69,7 +69,7 @@ private:
         estado[s] = VISITADO;
         distancia[s] = 0;
         list<int> cola;
-        cola.push_front(s);
+        cola.push_back(s);
         while(!cola.empty())
         {
             int u = cola.front();
@@ -83,7 +83,7 @@ private:
                     estado[v] = VISITADO;
                     distancia[v] = distancia[u] + 1;
                     padre[v] = u;
-                    cola.push_front(v);
+                    cola.push_back(v);
                 }
             }
         }
