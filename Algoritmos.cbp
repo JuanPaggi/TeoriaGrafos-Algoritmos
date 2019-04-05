@@ -35,16 +35,20 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/AlgoritmosVarios.h" />
-		<Unit filename="include/ArbolRecubrimiento.h" />
 		<Unit filename="include/Arco.h" />
 		<Unit filename="include/Grafo.h" />
+		<Unit filename="include/Kruskal.h" />
+		<Unit filename="include/Prim.h" />
 		<Unit filename="include/Recorridos.h" />
+		<Unit filename="include/UnionFind.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AlgoritmosVarios.cpp" />
-		<Unit filename="src/ArbolRecubrimiento.cpp" />
 		<Unit filename="src/Arco.cpp" />
 		<Unit filename="src/Grafo.cpp" />
+		<Unit filename="src/Kruskal.cpp" />
+		<Unit filename="src/Prim.cpp" />
 		<Unit filename="src/Recorridos.cpp" />
+		<Unit filename="src/UnionFind.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

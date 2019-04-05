@@ -1,13 +1,13 @@
-#ifndef ARBOLRECUBRIMIENTO_H
-#define ARBOLRECUBRIMIENTO_H
+#ifndef PRIM_H
+#define PRIM_H
 #include "Grafo.h"
 
 
-class ArbolRecubrimiento
+class Prim
 {
     public:
-        ArbolRecubrimiento(Grafo &);
-        ~ArbolRecubrimiento();
+        Prim(Grafo &);
+        ~Prim();
         void mostrarCosto();
         void prim();
 
@@ -34,4 +34,4 @@ class ArbolRecubrimiento
         }
 };
 
-#endif // ARBOLRECUBRIMIENTO_H
+#endif // PRIM_H

@@ -28,7 +28,7 @@
 	<list>
 	<map>
 
-1554476373 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
+1554476838 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
 	<iostream>
 	"Grafo.h"
 	"Recorridos.h"
@@ -177,4 +177,16 @@
 
 1554341494 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\arbolrecubrimiento.cpp
 	"ArbolRecubrimiento.h"
+
+1554496544 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\unionfind.cpp
+	"UnionFind.h"
+
+1554496544 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\unionfind.h
+	<list>
+
+1554496865 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\prim.cpp
+	"Prim.h"
+
+1554496865 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\prim.h
+	"Grafo.h"
 

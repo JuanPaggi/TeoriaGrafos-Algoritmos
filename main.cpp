@@ -31,8 +31,6 @@ int main()
 
     Recorridos bfs;
 
-    bfs.bosque_BFS(grafo, 1);
-
-    bfs.mostrarDatos_bfs();
+    bfs.clasificarArcos(grafo);
 
 }

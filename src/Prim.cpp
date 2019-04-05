@@ -1,6 +1,6 @@
-#include "ArbolRecubrimiento.h"
+#include "Prim.h"
 
-ArbolRecubrimiento::ArbolRecubrimiento(Grafo & g)
+Prim::Prim(Grafo & g)
 {
     n = g.size();
     costo = new int*[n+1];
@@ -28,7 +28,7 @@ ArbolRecubrimiento::ArbolRecubrimiento(Grafo & g)
     }
 }
 
-ArbolRecubrimiento::~ArbolRecubrimiento()
+Prim::~Prim()
 {
     for (int i = 0; i <= n; i++) {
         delete [] costo[i];
@@ -36,7 +36,7 @@ ArbolRecubrimiento::~ArbolRecubrimiento()
     delete [] costo;
 }
 
-void ArbolRecubrimiento::mostrarCosto()
+void Prim::mostrarCosto()
 {
     for (int i = 1; i <= n; i++) {
         for (int j = 1; j <= n; j++) {
@@ -53,7 +53,7 @@ void ArbolRecubrimiento::mostrarCosto()
     }
 }
 
-void ArbolRecubrimiento::prim()
+void Prim::prim()
 {
     menor_costo = new int[n+1];
     mas_cercano = new int[n+1];
