@@ -2,7 +2,8 @@
 #include "Grafo.h"
 #include "Recorridos.h"
 #include "AlgoritmosVarios.h"
-#include "ArbolRecubrimiento.h"
+#include "ConjuntoArcos.h"
+#include "Kruskal.h"
 
 using namespace std;
 
@@ -22,6 +23,14 @@ int main()
     grafo.agregarArco(3,4,5);
     grafo.agregarArco(2,5,1);
     grafo.agregarArco(4,5,10);
+    grafo.agregarArco(3,5,2);
+
+    grafo.agregarArco(2,1,3);
+    grafo.agregarArco(3,1,10);
+    grafo.agregarArco(4,3,5);
+    grafo.agregarArco(5,2,1);
+    grafo.agregarArco(5,4,10);
+    grafo.agregarArco(5,3,2);
 
 
 
@@ -29,8 +38,11 @@ int main()
 
     cout << "------------------------" << endl;
 
-    Recorridos bfs;
+    ConjuntoArcos conjunto;
 
-    bfs.clasificarArcos(grafo);
+    Kruskal arbol;
 
+    arbol.arbolSolucion(grafo);
+
+    arbol.mostrarSolucion();
 }

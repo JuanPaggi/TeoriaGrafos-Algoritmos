@@ -28,12 +28,13 @@
 	<list>
 	<map>
 
-1554476838 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
+1555960161 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
 	<iostream>
 	"Grafo.h"
 	"Recorridos.h"
 	"AlgoritmosVarios.h"
-	"ArbolRecubrimiento.h"
+	"ConjuntoArcos.h"
+	"Kruskal.h"
 
 1554143700 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\grafo.h
 	<iostream>
@@ -188,5 +189,27 @@
 	"Prim.h"
 
 1554496865 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\prim.h
+	"Grafo.h"
+
+1555960137 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\kruskal.cpp
+	"Kruskal.h"
+
+1555960137 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\kruskal.h
+	"Grafo.h"
+	"ConjuntoArcos.h"
+	"ColaPrioridad.h"
+	"UnionFind.h"
+
+1555960210 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\conjuntoarcos.cpp
+	"ConjuntoArcos.h"
+
+1555960174 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\conjuntoarcos.h
+	"Grafo.h"
+	<assert.h>
+
+1555953408 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\colaprioridad.cpp
+	"ColaPrioridad.h"
+
+1555953408 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\colaprioridad.h
 	"Grafo.h"
 
