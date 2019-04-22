@@ -28,13 +28,14 @@
 	<list>
 	<map>
 
-1555960161 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
+1555965363 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
 	<iostream>
 	"Grafo.h"
 	"Recorridos.h"
 	"AlgoritmosVarios.h"
 	"ConjuntoArcos.h"
 	"Kruskal.h"
+	"Floyd.h"
 
 1554143700 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\grafo.h
 	<iostream>
@@ -211,5 +212,11 @@
 	"ColaPrioridad.h"
 
 1555953408 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\colaprioridad.h
+	"Grafo.h"
+
+1555965395 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\floyd.cpp
+	"Floyd.h"
+
+1555962454 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\floyd.h
 	"Grafo.h"
 

@@ -4,6 +4,7 @@
 #include "AlgoritmosVarios.h"
 #include "ConjuntoArcos.h"
 #include "Kruskal.h"
+#include "Floyd.h"
 
 using namespace std;
 
@@ -23,7 +24,8 @@ int main()
     grafo.agregarArco(3,4,5);
     grafo.agregarArco(2,5,1);
     grafo.agregarArco(4,5,10);
-    grafo.agregarArco(3,5,2);
+    grafo.agregarArco(5,3,2);
+
 
     grafo.agregarArco(2,1,3);
     grafo.agregarArco(3,1,10);
@@ -38,11 +40,14 @@ int main()
 
     cout << "------------------------" << endl;
 
-    ConjuntoArcos conjunto;
+    Floyd caminos(grafo);
 
-    Kruskal arbol;
+    caminos.mostrarMatrizCostos();
 
-    arbol.arbolSolucion(grafo);
+    cout << "------------------------" << endl;
 
-    arbol.mostrarSolucion();
+    caminos.caminosMinimos();
+
+    caminos.mostrarCaminos();
+
 }
