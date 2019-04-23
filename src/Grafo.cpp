@@ -143,11 +143,18 @@ void Grafo::mostrarGrafo()
     for(list<int>::iterator it = vertices.begin(); it != vertices.end(); it++)
     {
         cout << *it << "->";
-        list<Arco > adyacentes = devolverAdyacentes(*it);
+        list<Arco> adyacentes = devolverAdyacentes(*it);
         for(list<Arco>::iterator itA = adyacentes.begin(); itA != adyacentes.end(); itA++)
         {
             cout << itA->devolverAdyacente() << " " ;
         }
         cout << endl;
     }
+}
+
+int Grafo::devolverCosto(int u, int v)
+{
+    map<int, map<int, int> >::iterator it = grafo.find(u);
+    map<int, int>::iterator itA = it->second.find(v);
+    return itA->second;
 }

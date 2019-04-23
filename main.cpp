@@ -5,6 +5,7 @@
 #include "ConjuntoArcos.h"
 #include "Kruskal.h"
 #include "Floyd.h"
+#include "Dijkstra.h"
 
 using namespace std;
 
@@ -39,15 +40,5 @@ int main()
     grafo.mostrarGrafo();
 
     cout << "------------------------" << endl;
-
-    Floyd caminos(grafo);
-
-    caminos.mostrarMatrizCostos();
-
-    cout << "------------------------" << endl;
-
-    caminos.caminosMinimos();
-
-    caminos.mostrarCaminos();
 
 }

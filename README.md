@@ -17,3 +17,4 @@ Arboles de recubrimiento
 
 Caminos Minimos
 -Algoritmo de Floyd
+-Algoritmo de Dijkstra

@@ -27,6 +27,7 @@ public:
     bool existeVertice(int) const;
     bool existeArco(int, int) const;
     bool existeCamino(int, int);
+    int devolverCosto(int, int);
     list<int> devolverVertices() const;
     list<Arco> devolverAdyacentes(int) const;
     list<Arco> devolverAristas() const;

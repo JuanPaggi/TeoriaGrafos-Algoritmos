@@ -36,7 +36,10 @@
 		</Compiler>
 		<Unit filename="include/AlgoritmosVarios.h" />
 		<Unit filename="include/Arco.h" />
+		<Unit filename="include/ColaPrioridad.h" />
 		<Unit filename="include/ConjuntoArcos.h" />
+		<Unit filename="include/Dijkstra.h" />
+		<Unit filename="include/Floyd.h" />
 		<Unit filename="include/Grafo.h" />
 		<Unit filename="include/Kruskal.h" />
 		<Unit filename="include/Prim.h" />
@@ -45,7 +48,10 @@
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AlgoritmosVarios.cpp" />
 		<Unit filename="src/Arco.cpp" />
+		<Unit filename="src/ColaPrioridad.cpp" />
 		<Unit filename="src/ConjuntoArcos.cpp" />
+		<Unit filename="src/Dijkstra.cpp" />
+		<Unit filename="src/Floyd.cpp" />
 		<Unit filename="src/Grafo.cpp" />
 		<Unit filename="src/Kruskal.cpp" />
 		<Unit filename="src/Prim.cpp" />

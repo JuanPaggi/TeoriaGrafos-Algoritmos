@@ -28,7 +28,7 @@
 	<list>
 	<map>
 
-1555965363 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
+1555989094 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
 	<iostream>
 	"Grafo.h"
 	"Recorridos.h"
@@ -36,8 +36,9 @@
 	"ConjuntoArcos.h"
 	"Kruskal.h"
 	"Floyd.h"
+	"Dijkstra.h"
 
-1554143700 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\grafo.h
+1555987633 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\grafo.h
 	<iostream>
 	<list>
 	<map>
@@ -53,7 +54,7 @@
 1554473898 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\recorridos.cpp
 	"Recorridos.h"
 
-1554143700 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafo.cpp
+1555988104 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafo.cpp
 	"Grafo.h"
 
 1554473955 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\algoritmosvarios.cpp
@@ -219,4 +220,12 @@
 
 1555962454 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\floyd.h
 	"Grafo.h"
+
+1555989154 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\dijkstra.cpp
+	"Dijkstra.h"
+
+1555988669 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\dijkstra.h
+	"Grafo.h"
+	<map>
+	<algorithm>
 
