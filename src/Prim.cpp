@@ -77,7 +77,7 @@ void Prim::prim()
                     mas_cercano[j] = w;
                 }
             }
-    }
+    }  // Complejidad O(n^2)
 
     cout << "------------------------" << endl;
 

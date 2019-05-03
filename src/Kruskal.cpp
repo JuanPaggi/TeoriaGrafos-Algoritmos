@@ -29,7 +29,7 @@ void Kruskal::arbolSolucion(Grafo & g)
             T.agregar(a);
         }
     }
-}
+} // Complejidad O(e*log(n)) Si el grafo es denso e se acerca a n^2
 
 ConjuntoArcos Kruskal::devolverArbol()
 {

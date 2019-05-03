@@ -28,7 +28,7 @@
 	<list>
 	<map>
 
-1555989094 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
+1556891907 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\main.cpp
 	<iostream>
 	"Grafo.h"
 	"Recorridos.h"
@@ -37,6 +37,8 @@
 	"Kruskal.h"
 	"Floyd.h"
 	"Dijkstra.h"
+	"Prim.h"
+	"GrafoNoOrientado.h"
 
 1555987633 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\grafo.h
 	<iostream>
@@ -54,7 +56,7 @@
 1554473898 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\recorridos.cpp
 	"Recorridos.h"
 
-1555988104 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafo.cpp
+1556891405 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafo.cpp
 	"Grafo.h"
 
 1554473955 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\algoritmosvarios.cpp
@@ -187,13 +189,13 @@
 1554496544 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\unionfind.h
 	<list>
 
-1554496865 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\prim.cpp
+1556116891 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\prim.cpp
 	"Prim.h"
 
 1554496865 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\prim.h
 	"Grafo.h"
 
-1555960137 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\kruskal.cpp
+1556116788 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\kruskal.cpp
 	"Kruskal.h"
 
 1555960137 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\kruskal.h
@@ -215,17 +217,27 @@
 1555953408 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\colaprioridad.h
 	"Grafo.h"
 
-1555965395 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\floyd.cpp
+1556118121 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\floyd.cpp
 	"Floyd.h"
 
 1555962454 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\floyd.h
 	"Grafo.h"
 
-1555989154 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\dijkstra.cpp
+1556117101 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\dijkstra.cpp
 	"Dijkstra.h"
 
 1555988669 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\dijkstra.h
 	"Grafo.h"
 	<map>
 	<algorithm>
+
+1556891629 source:c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\src\grafonoorientado.cpp
+	"GrafoNoOrientado.h"
+
+1556891433 c:\users\pachi\desktop\c++\teoriagrafos-algoritmos\include\grafonoorientado.h
+	<iostream>
+	<list>
+	<map>
+	<set>
+	"Arco.h"
 

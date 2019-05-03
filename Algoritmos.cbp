@@ -41,6 +41,7 @@
 		<Unit filename="include/Dijkstra.h" />
 		<Unit filename="include/Floyd.h" />
 		<Unit filename="include/Grafo.h" />
+		<Unit filename="include/GrafoNoOrientado.h" />
 		<Unit filename="include/Kruskal.h" />
 		<Unit filename="include/Prim.h" />
 		<Unit filename="include/Recorridos.h" />
@@ -53,6 +54,7 @@
 		<Unit filename="src/Dijkstra.cpp" />
 		<Unit filename="src/Floyd.cpp" />
 		<Unit filename="src/Grafo.cpp" />
+		<Unit filename="src/GrafoNoOrientado.cpp" />
 		<Unit filename="src/Kruskal.cpp" />
 		<Unit filename="src/Prim.cpp" />
 		<Unit filename="src/Recorridos.cpp" />

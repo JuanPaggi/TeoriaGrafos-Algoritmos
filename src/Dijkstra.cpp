@@ -49,7 +49,7 @@ void Dijkstra::caminosMinimos(Grafo & g, int u)
                 padre[v] = w;
             }
         }
-    }
+    } // Complejidad G.Densos O(n^2). Si se una lista Ady o Heap con G. no densos O(max (n log n , a log n))
 
     int n = g.size();
     cout << "Distancia: ";

@@ -70,7 +70,7 @@ void Floyd::caminosMinimos()
             for(int j = 1; j <= n; j++)
                 if(A[i][k] + A[k][j] < A[i][j])
                     A[i][j] = A[i][k] + A[k][j];
-}
+} // Complejidad O(n^3)
 
 void Floyd::mostrarCaminos()
 {
